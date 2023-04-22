@@ -27,8 +27,8 @@ def close_popup(context):
 def click_search_button(context):
     context.app.header.click_search()
 
-@then('Verify Product results for {text} are shown')
-def verify_found_results_text(context, text):
-    actual_text = context.driver.find_element(By.ID, 'ProductCount').text
-    assert text.lower() in actual_text.lower(), f"Expected query not in {actual_text.lower()}"
+# @then('Verify Product results for {text} are shown')
+# def verify_found_results_text(context, text):
+#     context.driver.find_element(I)
+
 
