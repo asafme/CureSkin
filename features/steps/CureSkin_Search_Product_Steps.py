@@ -27,8 +27,6 @@ def close_popup(context):
 def click_search_button(context):
     context.app.header.click_search()
 
-# @then('Verify Product results for {text} are shown')
-# def verify_found_results_text(context, text):
-#     context.driver.find_element(I)
+
 
 
