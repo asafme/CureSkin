@@ -7,4 +7,4 @@ Feature: CureSkin Product Search
     When Close popup window
     When Click on search button
     And Input text CureSkin gel
-    Then Verify Product results for Cureskin gel are shown
+    Then Verify Product results for CureSkin gel are shown

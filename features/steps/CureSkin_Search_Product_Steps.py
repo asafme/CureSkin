@@ -28,5 +28,8 @@ def click_search_button(context):
     context.app.header.click_search()
 
 
+@then('Verify Product results for {text} are shown')
+def verify_results_shown(context, text):
+    context.app.search_result.verify_results_shown()
 
 
