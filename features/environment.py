@@ -41,6 +41,19 @@ def browser_init(context):
     #     service=Service('/Users/jessicamenashe/asafme/CureSkin/chromedriver')
     # )
 
+    ###### for browserstack ########
+    desired_cap = {
+        'browser': 'Firefox',
+        'os_version': '11',
+        'os': 'Windows',
+        # 'name': test_name
+    }
+    bs_user = 'jessicamenashe_zDS1Ke'
+    bs_key = 'HFiUD7M9VxyaRXsHEfkS'
+    url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
+    context.driver = webdriver.Remote(url, desired_capabilities=desired_cap)
+
+
     context.driver.wait = WebDriverWait(context.driver, 10)
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
